@@ -1,6 +1,10 @@
 " Numbered columns
 set nu
 
+" Changing indentation
+set ts=2
+set sw=2
+
 " Unmap the arrow keys
 no <down> <Nop>
 no <left> <Nop>
