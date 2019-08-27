@@ -25,6 +25,10 @@ set sb
 " Theme for Airline:
 let g:airline_theme='light'
 
+" Setting background for Neovim(Gruvbox plugin)
+autocmd VimEnter * colorscheme gruvbox
+set background=light
+
 " Executing Plugins with vim-plug
 call plug#begin('~/.local/share/nvim/plugged')
 
@@ -35,6 +39,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'ncm2/ncm2'
 Plug 'dense-analysis/ale'
+Plug 'morhetz/gruvbox'
 
 " Plugins for R development
 Plug 'jalvesaq/Nvim-R'
