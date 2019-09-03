@@ -40,9 +40,26 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'ncm2/ncm2'
 Plug 'dense-analysis/ale'
 Plug 'morhetz/gruvbox'
+Plug 'vim-syntastic/syntastic'
+
+" Plugins for Haskell development
+Plug 'eagletmt/ghcmod-vim'
+Plug 'Shougo/vimproc'
+Plug 'neovimhaskell/haskell-vim'
+Plug 'dag/vim2hs'
 
 " Plugins for R development
 Plug 'jalvesaq/Nvim-R'
 Plug 'gaalcaras/ncm-R'
 
 call plug#end()
+
+" Settings for syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
