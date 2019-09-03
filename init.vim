@@ -40,6 +40,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'ncm2/ncm2'
 Plug 'dense-analysis/ale'
 Plug 'morhetz/gruvbox'
+Plug 'eagletmt/ghcmod-vim'
 
 " Plugins for R development
 Plug 'jalvesaq/Nvim-R'
