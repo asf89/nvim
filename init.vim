@@ -23,11 +23,17 @@ vno <up> <Nop>
 set sb
 
 " Theme for Airline:
-let g:airline_theme='light'
+" let g:airline_theme='light'
+let g:airline_theme='onedark'
 
-" Setting background for Neovim(Gruvbox plugin)
-autocmd VimEnter * colorscheme gruvbox
-set background=light
+" Setting onedark environment
+if (has("nvim"))
+	let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+endif
+
+if (has("termguicolors"))
+	set termguicolors
+endif
 
 " Executing Plugins with vim-plug
 call plug#begin('~/.local/share/nvim/plugged')
@@ -39,7 +45,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'ncm2/ncm2'
 Plug 'dense-analysis/ale'
-Plug 'morhetz/gruvbox'
+Plug 'joshdick/onedark.vim'
 Plug 'vim-syntastic/syntastic'
 
 " Plugins for Haskell development
@@ -63,3 +69,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" Activating syntax and onedark colorscheme
+syntax on 
+colorscheme onedark
