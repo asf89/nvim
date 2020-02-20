@@ -58,6 +58,9 @@ Plug 'dag/vim2hs'
 Plug 'jalvesaq/Nvim-R'
 Plug 'gaalcaras/ncm-R'
 
+" Plugins for Python development
+Plug 'cjrh/vim-conda'
+
 call plug#end()
 
 " Settings for syntastic
