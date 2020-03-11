@@ -61,6 +61,9 @@ Plug 'gaalcaras/ncm-R'
 " Plugins for Python development
 Plug 'cjrh/vim-conda'
 
+" Plugins for Scala development
+Plug 'derekwyatt/vim-scala'
+
 call plug#end()
 
 " Settings for syntastic
