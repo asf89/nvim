@@ -64,6 +64,9 @@ Plug 'cjrh/vim-conda'
 " Plugins for Scala development
 Plug 'derekwyatt/vim-scala'
 
+" Plugins for Julia development
+Plug 'JuliaEditorSupport/julia-vim'
+
 call plug#end()
 
 " Settings for syntastic
