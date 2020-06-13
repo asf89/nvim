@@ -41,7 +41,8 @@ call plug#begin('~/.local/share/nvim/plugged')
 " Plugins for Neovim environment
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'scrooloose/nerdtree'
+"Plug 'scrooloose/nerdtree'
+Plug 'preservim/nerdtree'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'ncm2/ncm2'
 Plug 'dense-analysis/ale'
@@ -82,3 +83,6 @@ let g:syntastic_check_on_wq = 0
 " Activating syntax and onedark colorscheme
 syntax on 
 colorscheme onedark
+
+" Settings for NERDTree
+let NERDTreeShowHidden = 1
