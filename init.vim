@@ -41,13 +41,13 @@ call plug#begin('~/.local/share/nvim/plugged')
 " Plugins for Neovim environment
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+
 "Plug 'scrooloose/nerdtree'
 Plug 'preservim/nerdtree'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'ncm2/ncm2'
 Plug 'dense-analysis/ale'
 Plug 'joshdick/onedark.vim'
-Plug 'vim-syntastic/syntastic'
 
 " Plugins for Haskell development
 Plug 'eagletmt/ghcmod-vim'
@@ -59,14 +59,8 @@ Plug 'dag/vim2hs'
 Plug 'jalvesaq/Nvim-R'
 Plug 'gaalcaras/ncm-R'
 
-" Plugins for Python development
-Plug 'cjrh/vim-conda'
-
 " Plugins for Scala development
 Plug 'derekwyatt/vim-scala'
-
-" Plugins for Julia development
-Plug 'JuliaEditorSupport/julia-vim'
 
 call plug#end()
 
